@@ -49,7 +49,7 @@ class UserController extends Controller
         }
     }
     //登录展示
-    function index(){
+    public function index(){
         $res=UserModel::all();
         // dd($res);
         return view('user/index',['res'=>$res]);
